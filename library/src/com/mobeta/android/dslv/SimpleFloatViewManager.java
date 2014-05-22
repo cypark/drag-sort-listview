@@ -57,7 +57,9 @@ public class SimpleFloatViewManager implements DragSortListView.FloatViewManager
         if (mImageView == null) {
             mImageView = new ImageView(mListView.getContext());
         }
-        mImageView.setBackgroundColor(mFloatBGColor);
+        
+        //	백 그라운드 색깔 없이 움직이게 한다.
+        //	mImageView.setBackgroundColor(mFloatBGColor);
         mImageView.setPadding(0, 0, 0, 0);
         mImageView.setImageBitmap(mFloatBitmap);
         mImageView.setLayoutParams(new ViewGroup.LayoutParams(v.getWidth(), v.getHeight()));
